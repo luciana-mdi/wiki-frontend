@@ -1,0 +1,90 @@
+/* src/components/Login.css */
+
+/* Import the light font */
+@font-face {
+    font-family: 'SaliecLight';
+    src: url('../assets/fonts/saliec-light.ttf') format('truetype'); /* Adjust path based on your structure */
+    font-weight: 300; /* Light font weight */
+    font-style: normal; /* Set style */
+}
+
+/* Import the regular font */
+@font-face {
+    font-family: 'SaliecRegular';
+    src: url('../assets/fonts/saliec-regular.otf') format('opentype'); /* Adjust path based on your structure */
+    font-weight: 400; /* Regular font weight */
+    font-style: normal; /* Set style */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1B1C43; /* Your background color */
+}
+
+.login-box {
+    background: #1A1B3C; /* Slightly lighter shade for the form box */
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);  /* Box shadow for depth */
+    padding: 2rem;
+    width: 320px;
+    text-align: center;
+    font-family: 'SaliecRegular', sans-serif; /* Use regular font */
+}
+
+.login-logo {
+    width: 300px; /* Adjust the width of the logo */
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #2E2F4F; /* Border for the inputs */
+    background: none;  /* No background */
+    color: white;  /* White text */
+    outline: none;  /* Remove outline */
+    font-size: 1rem;
+    font-family: 'SaliecLight', sans-serif; /* Use light font for input fields */
+}
+
+.login-input::placeholder {
+    color: #8C8EA6;  /* Placeholder color */
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #F94A29; /* Bright red-orange button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'SaliecRegular', sans-serif; /* Use regular font for the button */
+    margin-top: 1rem;
+}
+
+.login-button:hover {
+    background-color: #E43D20; /* Darker red on hover */
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    color: #8C8EA6;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: 'SaliecRegular', sans-serif; /* Use regular font for this text */
+}
+
+.forgot-password:hover {
+    color: white;
+}

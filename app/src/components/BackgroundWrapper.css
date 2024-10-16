@@ -1,0 +1,10 @@
+/* src/components/BackgroundWrapper.css */
+
+.background-wrapper {
+    background-color: #1B1C43;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
