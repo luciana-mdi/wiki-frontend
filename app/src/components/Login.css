@@ -1,4 +1,7 @@
 /* src/components/Login.css */
+* {
+    box-sizing: border-box; /* Apply box-sizing globally */
+}
 
 /* Import the light font */
 @font-face {
@@ -21,15 +24,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1B1C43; /* Your background color */
 }
 
 .login-box {
-    background: #1A1B3C; /* Slightly lighter shade for the form box */
+    background: linear-gradient(to bottom right,#151530, #262858);
     border-radius: 15px;  /* Rounded corners */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);  /* Box shadow for depth */
     padding: 2rem;
-    width: 320px;
+    width: 400px;
     text-align: center;
     font-family: 'SaliecRegular', sans-serif; /* Use regular font */
 }
@@ -82,7 +84,7 @@
     color: #8C8EA6;
     font-size: 0.9rem;
     text-decoration: none;
-    font-family: 'SaliecRegular', sans-serif; /* Use regular font for this text */
+    font-family: 'SaliecLight', sans-serif; /* Use regular font for this text */
 }
 
 .forgot-password:hover {
