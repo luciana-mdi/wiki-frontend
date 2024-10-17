@@ -1,0 +1,51 @@
+/* Import the light font */
+@font-face {
+    font-family: 'SaliecLight';
+    src: url('../assets/fonts/saliec-light.ttf') format('truetype'); /* Adjust path based on your structure */
+    font-weight: 300; /* Light font weight */
+    font-style: normal; /* Set style */
+}
+
+/* Import the regular font */
+@font-face {
+    font-family: 'SaliecRegular';
+    src: url('../assets/fonts/saliec-regular.otf') format('opentype'); /* Adjust path based on your structure */
+    font-weight: 400; /* Regular font weight */
+    font-style: normal; /* Set style */
+}
+
+.file-upload-container {
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(129, 128, 128, 0.3);  /* Box shadow for depth */
+    display: flex;
+    justify-content: flex-start;  /* Align content to the top */
+    align-items: flex-start;      /* Align content to the left */
+    height: 80vh;
+    width: 120vh;
+    border-radius: 16px;
+    padding: 20px;  /* Add padding to create space between the content and the box edges */
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Stack the headers vertically */
+    align-items: flex-start; /* Align the headers to the left */
+}
+
+h1, h2 {
+    margin: 0;  /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1 {
+    font-family: 'SaliecRegular', sans-serif;
+    font-size: 32px;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'SaliecLight', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 5px;
+}
