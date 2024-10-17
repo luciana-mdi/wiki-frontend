@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DragDropFile from './DragDropFile'; 
 import FileItem from './FileItem'; // Import the new FileItem component
 import './FileUpload.css';
@@ -9,6 +10,13 @@ const FileUpload = () => {
   const handleFileSelect = (files) => {
     const fileList = Array.from(files);
     setSelectedFiles(fileList);
+  };
+
+  const navigate = useNavigate();
+
+  const handleGenerateClick = () => {
+    // Navigate to the loading screen when the button is clicked
+    navigate('/loading');
   };
 
   return (
@@ -35,8 +43,8 @@ const FileUpload = () => {
 
 
       <div className="generate-buttons">
-        <button className="btn purple">Generate OOs</button>
-        <button className="btn dark-purple">Generate BPs</button>
+        <button className="btn purple" onClick={handleGenerateClick}>Generate OOs</button>
+        <button className="btn dark-purple" onClick={handleGenerateClick}>Generate BPs</button>
       </div>
     </div>
   );

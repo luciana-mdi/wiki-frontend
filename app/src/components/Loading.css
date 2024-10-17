@@ -1,0 +1,41 @@
+.loading-box {
+    background-color: #FFFFFF;
+    width: 80%;
+    max-width: 800px;  /* Restrict maximum width for better responsiveness */
+    height: 400px;
+    border-radius: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(129, 128, 128, 0.3);
+    text-align: center;
+  }
+  
+  .loading-box p {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'SaliecRegular';
+  }
+
+  /* Spinner CSS */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #FF6A4A; /* Blue color for the spinning part */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite; /* Infinite spinning animation */
+  }
+  
+  /* Keyframes for the spinning animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
