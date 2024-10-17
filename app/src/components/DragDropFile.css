@@ -1,0 +1,55 @@
+/* Import the light font */
+@font-face {
+    font-family: 'SaliecLight';
+    src: url('../assets/fonts/saliec-light.ttf') format('truetype'); /* Adjust path based on your structure */
+    font-weight: 300; /* Light font weight */
+    font-style: normal; /* Set style */
+}
+
+/* Import the regular font */
+@font-face {
+    font-family: 'SaliecRegular';
+    src: url('../assets/fonts/saliec-regular.otf') format('opentype'); /* Adjust path based on your structure */
+    font-weight: 400; /* Regular font weight */
+    font-style: normal; /* Set style */
+}
+
+.drag-drop-container {
+    border: 2px dashed #FF6A4A;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #FAFAFA;
+    transition: background-color 0.3s ease;
+  }
+  
+  .drag-drop-container.active {
+    background-color: #F0F0F0;
+  }
+
+.content {
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+  
+.dragFileText {
+    font-family: 'SaliecRegular', sans-serif;
+}
+
+.orText {
+    font-family: 'SaliecLight', sans-serif;
+}
+
+  .browse-btn {
+    color: #FF6A4A;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'SaliecRegular', sans-serif;
+    border: 1px solid #FF6A4A;
+    border-radius: 8px;
+    padding: 5px 20px;
+    margin-top: 20px;
+  }
+  

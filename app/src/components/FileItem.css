@@ -1,0 +1,63 @@
+.file-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+  
+  .file-details {
+    width: 100%; /* Ensure the file details take the full width */
+  }
+  
+  .file-details p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+.file-name {
+    font-family: 'SaliecRegular', sans-serif;
+}
+
+.loading-text {
+    font-family: 'SaliecLight', sans-serif;
+    font-size: 12px;
+    margin: 5px 0 0px 0px;
+}
+  
+  .loading {
+    display: flex;
+    flex-direction: column; /* Stack the text and progress bar vertically */
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .loading span {
+    margin-bottom: 5px; /* Add space below the text */
+  }
+  
+  .loading progress {
+    width: 100%; /* Make the progress bar span the full width */
+    height: 6px; /* Customize the height of the progress bar */
+    border-radius: 10px; /* Rounded corners for the progress bar */
+  }
+  
+  .loaded {
+    display: flex;
+    align-items: center;
+  }
+  
+  .loaded .icon-check {
+    background-color: #4CAF50; /* Green color for success */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
