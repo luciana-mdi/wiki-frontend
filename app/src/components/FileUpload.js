@@ -43,7 +43,7 @@ const FileUpload = () => {
 
 
       <div className="generate-buttons">
-        <button className="btn purple" onClick={handleGenerateClick}>Generate OOs</button>
+        <button className="btn purple" onClick={handleGenerateClick}>Generate 00s</button>
         <button className="btn dark-purple" onClick={handleGenerateClick}>Generate BPs</button>
       </div>
     </div>
